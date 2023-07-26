@@ -1,0 +1,69 @@
+<!--
+    Trong bài này, chúng ta sẽ tìm hiểu về khả năng tiếp cận nội dung của radio button trong biểu mẫu.
+    Mỗi đáp án tùy chọn sẽ sử dụng phần tử label và thuộc tính for,
+    trong đó thuộc tính for có cùng với giá trị thuộc tính id của radio button.
+    Vì các phần tử radio button thường được sử dụng trong cùng một nhóm với nhau,
+     trong đó, người dùng chỉ được phép chọn một đáp án. 
+    Trong HTML5, chúng ta có thể đưa các radio button vào trong 
+     cùng một tập hợp bằng cách sử dụng thẻ <fieldset>.
+    Thẻ <fieldset> trong HTML được sử dụng để nhóm các phần tử liên quan trong một form.
+    Thông thường, nó sẽ hiển thị một khung xung quanh các phần tử mà nó bao quanh, 
+    tạo ra một phân chia rõ ràng trong giao diện của form.
+    Thẻ <legend> thường được sử dụng cùng với <fieldset> để cung cấp một tiêu đề cho nhóm các phần tử này. 
+    Tiêu đề này sẽ hiển thị trong khung tạo bởi thẻ <fieldset>.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Học HTML CSS </title>
+</head>
+
+<body>
+    <header>
+        <h1>Học lập trình HTML cơ bản</h1>
+        <nav>
+            <ul>
+                <li><a href="#front_end">Front-end Dev</a></li>
+                <li><a href="#back_end">Back-end Dev</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="#front_end">
+            <h2>Lập trình Front-end</h2>
+            <article>
+                <div>Các ngôn ngữ cơ bản trong lập trình Front-end bao gồm HTML, CSS và JavaScript</div>
+            </article>
+        </section>
+        <section id="#back_end">
+            <h2>Lập trình Back-end</h2>
+            <article>
+                <div>Các ngôn ngữ cơ bản trong lập trình Back-end bao gồm PHP, Python và Java</div>
+            </article>
+        </section>
+
+        <section>
+            <form>
+                <!-- Bạn hãy thay đổi đoạn mã bên dưới -->
+                <fieldset>
+                    <p>Lựa chọn con đường của bạn là gì?</p>
+                    <input id="front" type="radio" name="path" value="frontend">
+                    <label for="front">Front-end</label><br>
+                    <input id="back" type="radio" name="path" value="backend">
+                    <label for="back">Back-end</label><br>
+                    <input id="full" type="radio" name="path" value="fullstack">
+                    <label for="full">Fullstack</label>
+                    <br>
+                    <!-- Bạn hãy thay đổi đoạn mã bên trên -->
+
+                    <legend>Bạn hãy nhập ngôn ngữ lập trình mà bạn muốn.</legend>
+                    <label>Ngôn ngữ:</label>
+                    <input type="text" id="lang" name="lang">
+                    <input type="submit" name="submit" value="Gửi">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <section id="last">Copyright ©2022 TEK4.VN</section>
+</body>

@@ -1,0 +1,44 @@
+<!--
+    Thẻ <label> trong HTML được sử dụng để xác định nhãn cho các phần tử như 
+    <input>, <select>, <textarea>, v.v.
+    Mục đích chính của thẻ <label> là cung cấp mô tả hoặc tiêu đề cho các phần tử nhập liệu (input elements).
+    
+    Thẻ <label> có thể được liên kết với một phần tử nhập liệu bằng một trong hai cách sau:
+        
+    *Cách thứ nhất: Đặt phần tử cần gán nhãn bên trong thẻ <label>:
+    <label>First Name:
+    <input type="text" name="first-name" />
+    </label>
+
+    *Cách thứ hai:  Sử dụng thuộc tính for của thẻ <label> để chỉ đến id của phần tử cần gán nhãn:
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-x`name" name="first-name" />
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Học HTML CSS </title>
+</head>
+
+<body>
+    <h1>Học lập trình HTML cơ bản</h1>
+    <ul>
+        <li><a href="#front_end">Front-end Dev</a></li>
+        <li><a href="#back_end">Back-end Dev</a></li>
+    </ul>
+
+    <main>
+        <h2>Lập trình Front-end</h2>
+        <p>Các ngôn ngữ cơ bản trong lập trình Front-end bao gồm HTML, CSS và JavaScript</p>
+        <h2>Lập trình Back-end</h2>
+        <p>Các ngôn ngữ cơ bản trong lập trình Back-end bao gồm PHP, Python và Java</p>
+
+        <form>
+            <p>Bạn hãy nhập ngôn ngữ lập trình mà bạn muốn.</p>
+            <label for="lang">Ngôn ngữ:</label>
+            <input type="text" id="lang" name="lang">
+            <input type="submit" name="submit" value="Gửi">
+        </form>
+    </main>
+    <p>Copyright ©2022 TEK4.VN</p>
+</body>

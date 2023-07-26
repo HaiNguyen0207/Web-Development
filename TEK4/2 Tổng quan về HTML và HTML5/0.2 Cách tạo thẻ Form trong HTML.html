@@ -1,0 +1,71 @@
+<!--
+    Trong HTML, thẻ <form> được sử dụng để tạo một biểu mẫu (form) để thu thập dữ liệu từ người dùng. 
+    Thẻ <form> bao bọc các phần tử đầu vào (input elements), 
+    nút gửi (submit button), các phần tử mô tả (label), và các phần tử khác liên quan đến biểu mẫu
+
+    Dưới đây là cú pháp cơ bản của thẻ <form>:
+
+    form action="url_xu_ly" method="phuong_thuc">
+     Các phần tử đầu vào, nút gửi và phần tử khác trong biểu mẫu 
+
+     Ví dụ sau đây tạo biểu mẫu Web để gửi dữ liệu trực tiếp đến
+    máy chủ bằng cách sử dụng thuộc tính action trong thẻ form:
+    <form action="/url-server">
+      <input>
+    </form>
+
+    Các thuộc tính quan trọng của thẻ <form> là:
+
+    * action: Xác định URL hoặc đường dẫn của tệp xử lý dữ liệu biểu mẫu khi người dùng gửi nó. 
+    Thông thường, bạn sẽ cung cấp một đường dẫn đến một tệp xử lý dữ liệu phía máy chủ hoặc 
+    một URL của một trang xử lý dữ liệu. 
+    Ví dụ: action="/xuly.php" hoặc action="https://example.com/process"
+    * method: Xác định phương thức HTTP được sử dụng để gửi dữ liệu biểu mẫu. 
+    Hai phương thức phổ biến là "GET" và "POST". "GET" sử dụng các tham số được gắn vào URL 
+    và thường được sử dụng cho các biểu mẫu không nhạy cảm hoặc yêu cầu dữ liệu ít. 
+    "POST" gửi dữ liệu như một phần của yêu cầu HTTP và thường được sử dụng cho các biểu mẫu 
+    chứa thông tin nhạy cảm hoặc yêu cầu dữ liệu lớn.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Học HTML</title>
+</head>
+
+<body>
+    <h1>Học lập trình HTML cơ bản</h1>
+    <h2>Xây dựng ứng dụng Web cơ bản</h2>
+    <main>
+
+        <p>Bạn hãy click vào đường dẫn để xem các khóa học<a href="#"> tek4.vn</a>.</p>
+        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80"
+            alt="Programming">
+        <p>Những kiến thức bạn có thể học:</p>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <p>Lập trình Web</p>
+
+        <ol>
+            <li>Front-end</li>
+            <li>Back-end</li>
+            <li>Full-stack</li>
+        </ol>
+        <form action="/url_send">
+            <input type="text" placeholder="Nhập ngôn ngữ lập trình mà bạn muốn">
+            <input type="submit" name="submit" value="Send">
+        </form>
+
+
+
+        <!--Đóng thẻ form tại đây-->
+    </main>
+</body>
+
+</html>

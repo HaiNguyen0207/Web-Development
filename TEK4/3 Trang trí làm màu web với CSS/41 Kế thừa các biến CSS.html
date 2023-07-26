@@ -1,0 +1,46 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Học HTML CSS </title>
+
+    <style>
+        :root {
+            --global: coral
+        }
+
+        .top {
+            background: var(--global);
+        }
+
+        .middle {
+            background: var(--global);
+        }
+
+        .bottom {
+            background: var(--global);
+        }
+
+        body {
+            background: #c6faf1;
+        }
+
+        .parent>div {
+            border: 1px solid black;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        Phần tử cha
+        <div class="top">
+            Phần tử con 1
+        </div>
+        <div class="middle">
+            Phần tử con 2
+        </div>
+        <div class="bottom">
+            Phần tử con 3
+        </div>
+    </div>
+</body>

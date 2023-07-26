@@ -1,0 +1,48 @@
+<!--
+    Trong HTML5, thẻ <figure> và <figcaption> được sử dụng để định rõ một nội dung trực quan bằng 
+    hình ảnh nào đó (như hình ảnh, biểu đồ, đoạn mã, vv.) cùng với mô tả chú thích của nó.
+    Việc kết hợp 2 phần tử này với nhau làm tăng khả năng tiếp cận gấp đôi khi có nhóm tập hợp các 
+    nội dung liên quan đến nhau và cung cấp một văn bản thay thế để chú thích cho biểu đồ.
+    Thẻ <figure> được sử dụng để chứa nội dung trực quan hình ảnh, 
+    trong khi thẻ <figcaption> được dùng để cung cấp mô tả cho nội dung này.
+    Mô tả này có thể đặt ở trên hoặc dưới nội dung trực quan, 
+    tuỳ thuộc vào vị trí của thẻ <figcaption> trong thẻ <figure>.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Học HTML CSS </title>
+</head>
+
+<body>
+    <header>
+        <h1>Học lập trình HTML cơ bản</h1>
+        <nav>
+            <ul>
+                <li><a href="#front_end">Front-end Dev</a></li>
+                <li><a href="#back_end">Back-end Dev</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="Programming" width="320px">
+                <figcaption>Học lập trình Web cơ bản HTML CSS</figcaption>
+            </figure>
+            <!-- Bạn hãy thay đổi đoạn mã bên trên -->
+        </section>
+
+        <section id="#front_end">
+            <h2>Lập trình Front-end</h2>
+            <article>Các ngôn ngữ cơ bản trong lập trình Front-end bao gồm HTML, CSS và JavaScript</article>
+        </section>
+        <section id="#back_end">
+            <h2>Lập trình Back-end</h2>
+            <article>Các ngôn ngữ cơ bản trong lập trình Back-end bao gồm PHP, Python và Java</article>
+        </section>
+    </main>
+    <section id="last">Copyright ©2022 TEK4.VN</section>
+</body>

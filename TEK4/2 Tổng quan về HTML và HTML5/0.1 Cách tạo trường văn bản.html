@@ -1,0 +1,64 @@
+<!--
+    Trong HTML, để tạo một phần tử đầu vào (input element), bạn có thể sử dụng thẻ <input>.
+    Thẻ này tạo ra một ô nhập
+    dữ liệu cho phép người dùng nhập dữ liệu hoặc chọn các tùy chọn trong một biểu mẫu (form).
+    Dưới đây là một số thuộc tính thường được sử dụng với thẻ <input>:
+
+    type: Xác định loại đầu vào.
+    Các giá trị thông dụng bao gồm "text" (đầu vào văn bản),
+     "password" (đầu vào mật khẩu), "number" (đầu vào số),
+      "email" (đầu vào email), 
+      "checkbox" (đầu vào dạng hộp tích chọn), 
+      "radio" (đầu vào dạng nút radio button) và nhiều loại khác.
+
+      name: Xác định tên của đầu vào. 
+      Dữ liệu nhập vào sẽ được gửi đến máy chủ với tên này khi người dùng gửi biểu mẫu
+
+      value: Xác định giá trị mặc định của đầu vào. Giá trị này sẽ được hiển thị trong ô nhập liệu ban đầu
+
+      placeholder: Xác định một đề mục (placeholder) hiển thị trong ô nhập liệu khi không có giá trị nào
+
+      required: Xác định xem đầu vào có yêu cầu dữ liệu bắt buộc hay không. 
+      Nếu được đặt, người dùng phải nhập vào đầu vào trước khi gửi biểu mẫu
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Học HTML</title>
+</head>
+
+<body>
+    <h1>Học lập trình HTML cơ bản</h1>
+    <h2>Xây dựng ứng dụng Web cơ bản</h2>
+    <main>
+
+        <p>Bạn hãy click vào đường dẫn để xem các khóa học<a href="#"> tek4.vn</a>.</p>
+        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80"
+            alt="Programming">
+        <p>Những kiến thức bạn có thể học:</p>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <p>Lập trình Web</p>
+
+        <ol>
+            <li>Front-end</li>
+            <li>Back-end</li>
+            <li>Full-stack</li>
+        </ol>
+
+        <form action="test">
+            <input type="text" name="input_text" placeholder="Nhập tên của bạn">
+            <input type="submit" name="send" value="send">
+        </form>
+
+    </main>
+</body>
+
+</html>
